@@ -1,0 +1,28 @@
+#Home{
+    height: 100vh;
+    background-image: url("../backgrounds/abstract-abstract-background-art-2457317.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+#top-level{
+    color: white;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+    font-size: 64pt;
+    font-weight: bolder;
+    padding: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+    #top-level{
+        color: white;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+        font-size: 12pt;
+        font-weight: bolder;
+        padding: 10px;
+    }
+
+}
