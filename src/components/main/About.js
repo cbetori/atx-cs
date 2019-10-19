@@ -1,9 +1,9 @@
 import React from 'react';
 
-function About() {
+function About(props) {
   return (
-    <div id="Content">
-        About
+    <div  id={props.content}>
+        Our goal is to help you GROW your business.
     </div>
   );
 }

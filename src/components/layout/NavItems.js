@@ -1,40 +1,32 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './layout.css';
 import logo from '../../logo/v5.png'
 import {Link} from 'react-router-dom'
 
 function NavItems(props) {
 
-    const [ toggle, toggleSet] = useState("hamburger")
-
-    function handleToggle() {
-        toggleSet(!toggle)
-      }
-
   return (
-    <div id={props.css}>
-      <Link to="/" className="link">
-        <h1 className="NavTop-h1">
-          <img className="NavTop-Logo" src={logo} alt="Company Logo"/>
+    <div id={props.css.Nav} class={props.css.status}>
+      <Link to="/" className="link"  onClick={props.handleSideNav}>
+        <h1 className={props.css.Navh1}>
+          <img className={props.css.NavLogo} src={logo} alt="Company Logo"/>
           ATX-CS
         </h1>
       </Link>
-      <div className="NavTop-Container">
-        <Link to='/services' className="NavTop-Container-Item">
+      <div className={props.css.NavContainer}  onClick={props.handleSideNav}>
+        <Link to='/why' id={props.css.Why} className={props.css.NavContainerItems}>
+            Why Us?
+        </Link>
+        <Link to='/services' className={props.css.NavContainerItems}>
             Services
         </Link>
-        <Link to='/about' className="NavTop-Container-Item">
+        <Link to='/about' className={props.css.NavContainerItems}>
             About
         </Link>
-        <Link to='/contact' id="NavTop-Contact" className="NavTop-Container-Item">
+        <Link to='/contact' id={props.css.NavContact} className={props.css.NavContainerItems}>
             Contact
         </Link>
       </div>
-      <div className={toggle  ? "hamburger" : "hamburger change"} onClick={e=>handleToggle(e)}>
-            <div className="bar1"></div>
-            <div className="bar2"></div>
-            <div className="bar3"></div>
-        </div>
     </div>
   );
 }

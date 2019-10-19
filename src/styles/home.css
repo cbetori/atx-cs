@@ -1,9 +1,15 @@
-#Home{
-    height: 100vh;
-    background-image: url("../backgrounds/abstract-abstract-background-art-2457317.jpg");
+#Content{
+    grid-area: Content;
+    display: flex;
+    width: auto;
+    background-image: url("../backgrounds/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  
+}
+
+#Home{
+    height: 100vh;
+    width: auto;
 }
 
 #top-level{

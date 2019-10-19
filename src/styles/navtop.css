@@ -1,0 +1,142 @@
+#NavTop{
+    cursor: default;
+    grid-area: NavTop;
+    display: flex;
+    position: sticky;
+    height: 99%;
+    top:0;
+    width: auto;
+    background-color: #292f4c;
+    box-shadow: 0px .3px 5px 0px whitesmoke;
+    /* border-bottom:white 5px solid; */
+    /* box-shadow: 100px 100px 100px white */
+}
+
+#NavTopContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* border-bottom:white 5px solid; */
+}
+
+.hamburger{
+    display: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+
+.NavTop-Logo{
+    margin: -10px;
+    margin-right: 15px; 
+    height: auto;
+    max-height: 50px;
+}
+.NavTop-h1{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 32pt;
+    margin-left: 20px;
+}
+.NavTop-Container{
+    display: flex;
+    font-size: 18pt;
+}
+
+.NavTop-Container-Item{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 25px;
+}
+
+.NavTop-Container-Item:hover{
+    color: whitesmoke;
+}
+
+#NavTop-Why{
+    font-weight: 100;
+    border: whitesmoke 1px solid;
+    border-radius: 5px;
+    padding: 5px 25px 5px 25px;
+    margin-top: -5px;
+}
+
+#NavTop-Contact{
+    background-color: #0ad3ac;
+    border-radius: 5px;
+    padding: 5px 25px 5px 25px;
+    margin-top: -5px;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: black;
+}
+
+@media only screen and (max-width: 992px) {
+#NavTop{
+    cursor: default;
+    grid-area: NavTop;
+    display: flex;
+    width: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #292f4c;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.NavTop-Container{
+    display: none;
+}
+
+.NavTop-Container-Item{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 3px;
+}
+
+.NavTop-Logo{
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: auto;
+    max-height: 30px;
+}
+
+.NavTop-h1{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24pt;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.hamburger{
+    display: inline;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: whitesmoke;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}

@@ -4,7 +4,7 @@ import '../../styles/contact.css'
 import { Form, Input} from 'antd'
 const { TextArea } = Input;
 
-function Contact() {
+function Contact(props) {
 
   const formValues ={
     firstName : '',
@@ -28,7 +28,8 @@ function Contact() {
   }
 
   return (
-    <div id="contact-page">
+    <div  id={props.content}>
+      <div id="contact-page">
       <Form>
       <div className='container'>
         <div className='details-container'>
@@ -60,7 +61,7 @@ function Contact() {
       </div>
       <div className='requestBtn' onClick={e=>sendEmail()}>Request Consulation</div>
       </Form>
-  
+      </div>
     </div>
   );
 }
