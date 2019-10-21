@@ -1,70 +1,68 @@
 @media only screen and (min-width: 993px) {
-   #App, #SideNavOpen{
-    background-color: #eee4e9;
-    height: 110vh;
-    width: auto;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 100px auto auto auto 100px;
-    grid-template-areas:
-    "NavTop   NavTop  NavTop"
-    "Content  Content Content"
-    "Content  Content Content"
-    "Content  Content Content"
-    "Footer   Footer  Footer"
-    ;
-}
+	#App,
+	#SideNavOpen {
+		background-color: #eee4e9;
+		height: fit-content;
+		min-height: 110vh;
+		width: auto;
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-template-rows: 100px auto auto auto 100px;
+		grid-template-areas:
+			'NavTop   NavTop  NavTop'
+			'Content  Content Content'
+			'Content  Content Content'
+			'Content  Content Content'
+			'Footer   Footer  Footer';
+	}
 
-#Content{
+	/* #Content{
     grid-area: Content;
     display: flex;
     width: auto;
-}
+} */
 
-#NoContent{
-    grid-area: Content;
-}
+	#NoContent {
+		grid-area: Content;
+	}
 
-#Footer{
-    grid-area: Footer;
-    width: auto;
-    background-color: whitesmoke;
- 
-}
+	#Footer {
+		grid-area: Footer;
+		width: auto;
+		background-color: whitesmoke;
+	}
 }
 
 @media screen and (max-width: 992px) {
-  
 }
 
 @media only screen and (max-width: 992px) {
-    #App{
-        height: 110vh;
-        width: auto;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 100px auto;
-        grid-template-areas:
-        "NavTop"
-        "Content"
-        "Content"
-        "Content"
-        "Footer"
-        ;
-    }
+	#App {
+		background-color: #eee4e9;
+		height: 110vh;
+		width: auto;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 100px auto;
+		grid-template-areas:
+			'NavTop'
+			'Content'
+			'Content'
+			'Content'
+			'Footer';
+	}
 
-    #SideNavOpen{
-        height: 110vh;
-        width: auto;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 100px auto;
-        grid-template-areas:
-        "NavTop"
-        "SideNav"
-        "SideNav"
-        "SideNav"
-        "Footer"
-        ;
-    }
+	#SideNavOpen {
+		height: 110vh;
+		width: auto;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 100px auto;
+		grid-template-areas:
+			'NavTop'
+			'SideNav'
+			'SideNav'
+			'SideNav'
+			'Footer';
+	}
 }

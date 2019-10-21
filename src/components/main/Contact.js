@@ -6,7 +6,7 @@ const { TextArea } = Input;
 
 function Contact(props) {
 
-  const formValues ={
+  const formValues ={ 
     firstName : '',
     lastName : '',
     email : '',
@@ -29,7 +29,7 @@ function Contact(props) {
 
   return (
     <div  id={props.content}>
-      <div id="contact-page">
+      <div id="Contact">
       <Form>
       <div className='container'>
         <div className='details-container'>

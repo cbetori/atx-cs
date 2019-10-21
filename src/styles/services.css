@@ -1,0 +1,108 @@
+#Services {
+	width: 100%;
+}
+
+#services-btn-ctn {
+	display: flex;
+	justify-content: space-evenly;
+	height: 100px;
+	color: whitesmoke;
+	font-size: 24pt;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+#services-btn-web {
+	background-color: lightskyblue;
+}
+
+#services-btn-server {
+	background-color: lightcoral;
+}
+
+#services-btn-data {
+	background-color: lightseagreen;
+}
+
+.services-btn {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	width: 100%;
+}
+
+#website {
+	font-size: 32pt;
+	padding-top: 100px;
+	height: 2000px;
+	background-image: url('../backgrounds/services/road.jpeg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#server {
+	font-size: 32pt;
+	height: 2000px;
+}
+
+#server-container {
+	display: flex;
+	background-image: url('../backgrounds/services/code-left2.png');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#server-content {
+	height: 2000px;
+	width: 100%;
+	background-image: url('../backgrounds/services/code-left2.png');
+	background-attachment: fixed;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#server-background {
+	height: 2000px;
+	width: 120%;
+	background-image: url('../backgrounds/services/code-right2.png');
+	background-attachment: fixed;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+#database {
+	height: 2000px;
+}
+
+#database-container {
+	display: flex;
+}
+
+#database-content {
+	width: 80%;
+}
+
+#database-background {
+	height: 2000px;
+	width: 120%;
+	background-image: url('../backgrounds/services/data.jpeg');
+	background-attachment: fixed;
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+.spacer {
+	background: whitesmoke;
+	height: 100px;
+	width: 100%;
+}
